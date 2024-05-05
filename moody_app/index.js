@@ -1,4 +1,5 @@
 /* === Imports === */
+import {appApi} from "./env"
 import { initializeApp } from "firebase/app";
 import {
   getAuth,
@@ -25,8 +26,10 @@ import {
 
 /* === Firebase Setup === */
 /* IMPORTANT: Replace this with your own firebaseConfig when doing challenges */
+let myKey = appApi()
 const firebaseConfig = {
-  apiKey: "AIzaSyAsgOiTk7quYkA9vtXFkzoIzjVEYUHTPHo",
+
+  apiKey: myKey,
   authDomain: "moody-bda85.firebaseapp.com",
   projectId: "moody-bda85",
   storageBucket: "moody-bda85.appspot.com",
